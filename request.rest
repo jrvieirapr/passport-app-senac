@@ -1,0 +1,23 @@
+### Registrar usuario
+POST http://localhost:8000/api/register HTTP/1.1
+Content-Type: application/json
+
+{    
+    "name": "Juliano",
+    "email": "juca3@juca.com.br",
+    "password" : "senha123"    
+}
+
+### Fazer login
+POST http://localhost:8000/api/login HTTP/1.1
+Content-Type: application/json
+
+{    
+    "email": "juca3@juca.com.br",
+    "password" : "senha123"    
+}
+
+### Fazer logout usando o token
+POST http://localhost:8000/api/logout
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmEwMWEwNzhmYjllZTlhMTNkZjMzMDJmODI5MzcxMjAyN2JiZGQ5ZGNkMDRjOTM2ZDdkZjJmNmU1NGFkOWYzMjExOTUzNTFmYzcyNjg1MDgiLCJpYXQiOjE2OTQ2MzMxMjIuNDkxMDY2LCJuYmYiOjE2OTQ2MzMxMjIuNDkxMDY4LCJleHAiOjE3MjYyNTU1MjIuNDc3NDQsInN1YiI6IjMiLCJzY29wZXMiOltdfQ.OIcDsIHtAg5qTdWY_Ne6w2nmT9dFKABMbw3V9svr68le3tWkwBZyX3zzpedA-rN-fu22prpkuDm8oSIi4dJLwyqDCa4pf-H7LPBIeAja6HsNn0ye2Kl7ZKrpLZ_KVdROCgrRxnbXlxguJ2iBVmS5dyD9u1Ns3SGfx2kuV87nW1ZZtzt4GTfmFksgtSkSNuTwWCdzD3o-KuNYJ6g1pSkWvHbcbZABzfB_waoUwBxtExXGq7FIOPk7EbtHxqF2yCET7IDkiM044m0GXVn-nLAn9Gp4U8kz5VVd-QbV7XFGncnERdzLr1h0bTisTlhEWtaDY3uJYCAVFIO7OV104U0Ott3nB5M963iX5fb3XHWBkiksZ8i7ujXd_YkEJOtoOpSHhL_tgN6nQn_BKrVAEuMsDJ2glMNGf2NzzrIZvpnEWPeA7uhhnp3neJqvPDDLsOW8kYpL_iqX4kUgLTObgpxjT2aBiVOAGcRr7_PNMCTyC1zBQ5B-s-Y-sucaaqiSCEBmcg0rX5Uu-M9wh1x0OWXwuR0hc5vW6eCYGXBhIDaCIpcbq9mUEclSGhOYENkmRCklhlzZZcRrwpdYy4sFwbjY0kasCrsNPDybPFBZE262cue3D8wxuq2Je0TP26K3PQW4exK6DnJOTTDWjuQT28YM9Ph8KQo5jm4E8k90yazBNY0
